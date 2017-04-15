@@ -64,11 +64,11 @@ complex64, complex 128
 <li> the first index of a string is 0 (all arrays in Go are 0-based)
 
 </ul>
-## Booleans
 
-3 boolean operators: &&,||,! 
-relational operators: ==, !=, >, <, >=, <=
-All relational operators return true||false
+## Booleans
+3 boolean operators: &&,||,!  <br>
+relational operators: ==, !=, >, <, >=, <= <br>
+All relational operators return true||false <br>
 
 ## Declarations
 Go is strongly typed so a variable always has only one specific type
@@ -198,4 +198,29 @@ if a==b {
 else {
             //something else here
 }
+````
+## Switch statement
+
+```` golang
+switch {
+            case case_value>45564546:   /455... is a random value I choose
+                    //something happens
+            case other_Case_value = 4 :
+                    //something other happens
+            default:
+                    //some default code for all other conditionals
+}
+
+switch variable_name {
+        //same as withouth a variable
+ }
+ 
+ switch variable_name {
+        case 1,2,3: 
+        //do something here
+        case 4,5,6:
+        //do something else
+        default:
+        //default code for other conditions
+ }
 ````

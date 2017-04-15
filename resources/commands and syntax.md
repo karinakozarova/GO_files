@@ -4,7 +4,7 @@
 $GOPATH/bin/hello 
 go run hello.go //runs the executable as temporary
 ````
-
+new main -> new folder -> new file
 # Compiling 
 
 ```` golang
@@ -17,8 +17,8 @@ The compiler is inserting the semicolon where they have to be
 **Everything in go is a package:** <br>
 package main contains a function main, which prints hello,world. <br> <br>
 package main <br>
-import "fmt" -> contains Printf
-
+import "fmt" -> contains Printf <br>
+All variables can be printed with %v <br>
 All packages: <a href = "goland.org/pkg"> Packages</a> or
 go doc fmt (shows fmt)
 
@@ -100,3 +100,54 @@ If a non-typed var or := declaration is made:
 <li> anything that appears as complex num will be complex128
 
 </ul>
+
+## Grouping multiple vars
+
+```` golang
+var(
+    a=1
+    a=6
+) 
+
+var a, b = 3, 5
+a, b := 3,5
+````
+
+In global score,we need the var!
+
+## Functions
+
+### function declaration
+```` golang
+func func_name(parametres) return_type {
+}
+````
+### returning simgle value
+```` golang
+func func_name(parametres) return_type {
+      //Code goes here
+      return result_as_return_Type
+}
+````
+### returning multiple values
+
+```` golang
+func func_name(parametres) (return_type_1, return_type_2) {
+      //Code goes here
+      return result_as_return_Type1 result_as_return_Type2
+}
+````
+### naming return values example
+```` golang
+func swap(b, a) (x int, y int) {
+x, y = b,a
+return //returns x and y
+}
+````
+
+### variadic parameter list
+```` golang
+func adds(integers ...int) int {
+//range
+}
+```` 

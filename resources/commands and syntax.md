@@ -2,6 +2,7 @@
 
 ```` golang
 $GOPATH/bin/hello 
+go run hello.go //runs the executable as temporary
 ````
 
 # Compiling 
@@ -9,7 +10,9 @@ $GOPATH/bin/hello
 ```` golang
 go install github.com/karinakozarova/project_folder
 ````
-
+# Semicolons
+Semicolons are optional.
+The compiler is inserting the semicolon where they have to be
 # Info
 **Everything in go is a package:** <br>
 package main contains a function main, which prints hello,world. <br> <br>

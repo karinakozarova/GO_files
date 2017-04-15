@@ -1,15 +1,15 @@
 # Executing 
 
-```` golang
+``` golang
 $GOPATH/bin/hello 
 go run hello.go //runs the executable as temporary
-````
+``` 
 new main -> new folder -> new file
 # Compiling 
 
-```` golang
+``` golang
 go install github.com/karinakozarova/project_folder
-````
+```
 # Semicolons
 Semicolons are optional.
 The compiler is inserting the semicolon where they have to be
@@ -73,25 +73,25 @@ All relational operators return true||false <br>
 ## Declarations
 Go is strongly typed so a variable always has only one specific type
 variables are declared
-```` go
+``` go
 var name type optional assignment
 var hello strintg = "hello world"
-````
+```
 
 If type was not given, the compiler will infer.
-```` go
+``` go
 var age = 16 //int
 var name = "user" //string
-```` 
+``` 
 
 ### := operator
 Use type inference to assign a value to a new variable name. <br>
 This syntax can't be used outside a function.
 
-```` go
+``` go
 x := 16 //is the same as
 var x = 16
-```` 
+``` 
 
 If a non-typed var or := declaration is made:
 <ul>
@@ -103,7 +103,7 @@ If a non-typed var or := declaration is made:
 
 ## Grouping multiple vars
 
-```` golang
+``` golang
 var(
     a=1
     a=6
@@ -111,79 +111,79 @@ var(
 
 var a, b = 3, 5
 a, b := 3,5
-````
+```
 
 In global score,we need the var!
 
 ## Functions
 
 ### function declaration
-```` golang
+``` golang
 func func_name(parametres) return_type {
 }
-````
+```
 ### returning simgle value
-```` golang
+``` golang
 func func_name(parametres) return_type {
       //Code goes here
       return result_as_return_Type
 }
-````
+```
 ### returning multiple values
 
-```` golang
+``` golang
 func func_name(parametres) (return_type_1, return_type_2) {
       //Code goes here
       return result_as_return_Type1 result_as_return_Type2
 }
-````
+```
 ### naming return values example
-```` golang
+``` golang
 func swap(b, a) (x int, y int) {
 x, y = b,a
 return //returns x and y
 }
-````
+```
 
 ### variadic parameter list
-```` golang
+``` golang
 func adds(integers ...int) int {
 //range
 }
-```` 
+``` 
 ## Arrays
 
 ### Declaration and printing
-```` golang
+``` golang
 //declaration
 variable_name := [array_count]type{numbers come here}
 //printing
 fmt.Printf("%v",variable_name)
-```` 
+``` 
 
 ### range and len of array
 
-```` golang
+``` golang
 for i:= range array_name
         //goes in for each element from the array
 }
 len(array)  // finds the length of the array
-````
+```
 ## Loops
 There is only a for loop in Go
 
-```` golang
+``` golang
 for i := 0; i<count; i++ {
     //code here
 }
 for {
         //infinite loop
 }
-```` 
+``` 
 
 ## If, else, else if
 
-```` golang
+``` golang
 if a==b {
             //some code here
 } else {
@@ -198,10 +198,10 @@ if a==b {
 else {
             //something else here
 }
-````
+```
 ## Switch statement
 
-```` golang
+``` golang
 switch {
             case case_value>45564546:   /455... is a random value I choose
                     //something happens
@@ -223,6 +223,6 @@ switch variable_name {
         default:
         //default code for other conditions
  }
-````
+```
 ## Slices
 slice - a reference to an underlying array

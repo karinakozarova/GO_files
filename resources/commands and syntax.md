@@ -224,3 +224,5 @@ switch variable_name {
         //default code for other conditions
  }
 ````
+## Slices
+slice - a reference to an underlying array

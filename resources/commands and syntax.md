@@ -151,3 +151,51 @@ func adds(integers ...int) int {
 //range
 }
 ```` 
+## Arrays
+
+### Declaration and printing
+```` golang
+//declaration
+variable_name := [array_count]type{numbers come here}
+//printing
+fmt.Printf("%v",variable_name)
+```` 
+
+### range and len of array
+
+```` golang
+for i:= range array_name
+        //goes in for each element from the array
+}
+len(array)  // finds the length of the array
+````
+## Loops
+There is only a for loop in Go
+
+```` golang
+for i := 0; i<count; i++ {
+    //code here
+}
+for {
+        //infinite loop
+}
+```` 
+
+## If, else, else if
+
+```` golang
+if a==b {
+            //some code here
+} else {
+            //something else here
+}
+
+if a==b {
+            //some code here
+} else if a>b {
+            //something else here
+}
+else {
+            //something else here
+}
+````

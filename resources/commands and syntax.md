@@ -18,3 +18,82 @@ import "fmt" -> contains Printf
 
 All packages: <a href = "goland.org/pkg"> Packages</a> or
 go doc fmt (shows fmt)
+
+# Data types
+
+## integer types
+There is no automatic conversion between int types. <br>
+int8, int16, int32, int64 <br>
+uint8, uint16, uint32, uint64 <br>
+<hr>
+
+### machine dependent types
+
+**uint, int, uintptr** <br>
+Their sizes depend on the system. <br>
+
+<hr>
+rune data type - aliased to uint32(used to get to unicode encoded characters)
+byte data type - aliased to uint8 (used to get to ascii encoded character)
+<hr>
+
+## floating point types
+float32, float64 <br>
+float64 - general use <br>
+
+### two complex number types:
+complex64, complex 128
+<ul>
+
+<li> specified by their bit size
+<li> increase in bit width equates to an increase in precision, not range
+
+</ul>
+
+## strings
+<ul>
+
+<li> arrays of bytes/runes
+<li> can be enclosed in " " or ` `
+<li> a `string` can contain newlines
+<li> a "string" can contain special charactesrs such as \n(new line) or \t(tab)
+<li> can be be indexed
+<li> the first index of a string is 0 (all arrays in Go are 0-based)
+
+</ul>
+## Booleans
+
+3 boolean operators: &&,||,! 
+relational operators: ==, !=, >, <, >=, <=
+All relational operators return true||false
+
+## Declarations
+Go is strongly typed so a variable always has only one specific type
+variables are declared
+```` go
+var name type optional assignment
+var hello strintg = "hello world"
+````
+
+If type was not given, the compiler will infer.
+```` go
+var age = 16 //int
+var name = "user" //string
+```` 
+
+### := operator
+Use type inference to assign a value to a new variable name. <br>
+This syntax can't be used outside a function.
+
+```` go
+x := 16 //is the same as
+var x = 16
+```` 
+
+If a non-typed var or := declaration is made:
+<ul>
+<li> anything that has no . or "" will be an int
+<li> anything that appears as float will be typed as float64
+<li> anything that appears as complex num will be complex128
+
+</ul>

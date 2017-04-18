@@ -244,3 +244,20 @@ type Name struct{ //name should start with big letter
  
  ``` 
  
+## Pointers
+
+pointer = a variable that has as value an address <br>
+Each byte us assigned an address
+<br>
+\* -> value <br>
+& -> address <br>
+
+``` golang
+a := 5
+b := &a
+a == *b  // both are 5
+``` 
+ ## Input
+ 
+ Scan - treats the new line as a space
+ Scanln - treats the new line as end of input

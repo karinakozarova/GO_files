@@ -226,3 +226,21 @@ switch variable_name {
 ```
 ## Slices
 slice - a reference to an underlying array
+
+## Structures
+``` golang
+type Name struct{ //name should start with big letter
+        a,b float64 
+ }
+ func main(){
+        var r1 Name
+        r1.a = 1
+        r1.b = 2
+        
+        r2 :=  new(Name)
+        r2.a = 3
+        r2.b = 4
+ }
+ 
+ ``` 
+ 

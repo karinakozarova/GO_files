@@ -9,13 +9,13 @@ import (
 func main () {
 	var number int //declaration
 	var tries int = 0
-	random_number := random(1, 9) //gets random number
+	randomNumber := random(1, 9) //gets random number
     for ; ;tries++ {
 	    	    fmt.Printf("Enter your prediction: ")
 	    	    fmt.Scanf("%v\n",&number)
-					if number == random_number {
+					if number == randomNumber {
 							break;
-					} else if number<random_number{
+					} else if number<randomNumber{
 								fmt.Printf("Smaller than random num\n")
 					} else {
 								fmt.Printf("Bigger than random num\n")

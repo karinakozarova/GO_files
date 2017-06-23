@@ -8,7 +8,7 @@ import (
 
 func main () {
 	var number int //declaration
-	var tries int = 0
+	var tries int // by default it is 0
 	randomNumber := random(1, 9) //gets random number
     for ; ;tries++ {
 	    	    fmt.Printf("Enter your prediction: ")
